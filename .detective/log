@@ -1,0 +1,23 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 00:57:03 2024 -0500	fb93a143b9ee8c89d1af9b14fabf46d0f4096cd5,initial commit"
+17	0	.editorconfig
+42	0	.gitignore
+4	0	.vscode/extensions.json
+20	0	.vscode/launch.json
+42	0	.vscode/tasks.json
+27	0	README.md
+96	0	angular.json
+13259	0	package-lock.json
+38	0	package.json
+-	-	public/favicon.ico
+0	0	src/app/app.component.css
+336	0	src/app/app.component.html
+29	0	src/app/app.component.spec.ts
+13	0	src/app/app.component.ts
+8	0	src/app/app.config.ts
+3	0	src/app/app.routes.ts
+13	0	src/index.html
+6	0	src/main.ts
+1	0	src/styles.css
+15	0	tsconfig.app.json
+33	0	tsconfig.json
+15	0	tsconfig.spec.json
