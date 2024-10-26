@@ -1,3 +1,20 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 04:42:58 2024 -0500	7a0c1e8fd712891c53797b797dd8820fb6378988,first commit"
+20	0	.detective/config.json
+1	0	.detective/hash
+23	0	.detective/log
+14	0	angular.json
+45	0	eslint.config.js
+1870	337	package-lock.json
+9	2	package.json
+31	0	sheriff.config.ts
+0	29	src/app/app.component.spec.ts
+1	1	src/app/app.config.ts
+2	0	src/app/domains/cart/domain/test.ts
+0	0	src/app/domains/cart/feature/test.ts
+2	0	src/app/domains/catalog/domain/test.ts
+11	11	src/index.html
+1	1	src/main.ts
+
 "DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 00:57:03 2024 -0500	fb93a143b9ee8c89d1af9b14fabf46d0f4096cd5,initial commit"
 17	0	.editorconfig
 42	0	.gitignore
