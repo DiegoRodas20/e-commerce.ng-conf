@@ -1,6 +1,23 @@
 {
-  "scopes": [],
-  "groups": [],
+  "scopes": [
+    "src/app/domains/catalog/feature/product-detail",
+    "src/app/domains/catalog/feature/product-list",
+    "src/app/domains/order/feature/order-detail",
+    "src/app/domains/order/feature/order-history",
+    "src/app/domains/payment/feature/payment-form",
+    "src/app/domains/payment/feature/payment-summary",
+    "src/app/shell"
+  ],
+  "groups": [
+    "src/app/domains/catalog/feature",
+    "src/app/domains/catalog",
+    "src/app/domains/order/feature",
+    "src/app/domains/order",
+    "src/app/domains/payment/feature",
+    "src/app/domains/payment",
+    "src/app/domains",
+    "src/app"
+  ],
   "entries": [],
   "filter": {
     "files": [],

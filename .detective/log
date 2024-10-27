@@ -1,3 +1,28 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 17:12:27 2024 -0500	a3561a3a7f84bcbc59b2d6b5674b497ee1dff29a,Implementation of services"
+0	0	src/app/domains/cart/domain/{test.ts => cart.service.ts}
+0	0	src/app/domains/cart/{feature/test.ts => domain/cart.ts}
+0	0	src/app/domains/catalog/domain/catalog.service.ts
+0	0	src/app/domains/catalog/domain/{test.ts => product.ts}
+0	0	src/app/domains/order/domain/order.service.ts
+0	0	src/app/domains/order/domain/order.ts
+0	0	src/app/domains/payment/domain/payment.service.ts
+0	0	src/app/domains/payment/domain/payment.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 15:22:33 2024 -0500	69bbb23662e2c285377c4fe61fd40a6fde9cc78e,Adding routes of bounded contexts"
+1	1	.detective/hash
+17	0	.detective/log
+1	335	src/app/app.component.html
+7	6	src/app/app.component.ts
+0	0	src/app/domains/catalog/catalog.routes.ts
+0	0	src/app/domains/order/order.routes.ts
+0	0	src/app/domains/payment/payment.routes.ts
+0	0	src/app/shell/home/home.component.css
+0	0	src/app/shell/home/home.component.html
+14	0	src/app/shell/home/home.component.ts
+0	0	src/app/shell/navbar/navbar.component.css
+0	0	src/app/shell/navbar/navbar.component.html
+14	0	src/app/shell/navbar/navbar.component.ts
+
 "DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 04:42:58 2024 -0500	7a0c1e8fd712891c53797b797dd8820fb6378988,first commit"
 20	0	.detective/config.json
 1	0	.detective/hash
