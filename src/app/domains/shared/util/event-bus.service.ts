@@ -4,7 +4,7 @@ export type DomainEventType = 'ProductSelected' | 'ProductAddedToCart' | 'CartCo
 
 export interface DomainEvent {
     type: DomainEventType;
-    payload: any;
+    payload: unknown;
 }
 
 @Injectable({
@@ -13,7 +13,7 @@ export interface DomainEvent {
 export class EventBusService {
 
     private eventSignal = signal<DomainEvent | null>(null);
-    private listeners = new Map<DomainEventType, ((payload: any) => void)[]>();
+    private listeners = new Map<DomainEventType, ((payload: unknown) => void)[]>();
 
     constructor() {
         effect(() => {
@@ -29,7 +29,7 @@ export class EventBusService {
         this.eventSignal.set(event);
     }
 
-    onEvent(type: DomainEventType, callback: (payload: any) => void) {
+    onEvent(type: DomainEventType, callback: (payload: unknown) => void) {
         if (!this.listeners.has(type)) {
             this.listeners.set(type, []);
         }

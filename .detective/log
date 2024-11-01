@@ -1,3 +1,30 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Fri Nov 1 04:27:45 2024 -0500	34782fa0749869164b7074911bf88e9cf11c7582,Implementation of catalog list and event bus with signals"
+7	10	.detective/config.json
+1	1	.detective/hash
+28	0	.detective/log
+1	1	.editorconfig
+4	1	angular.json
+28	0	package-lock.json
+3	0	package.json
+67	0	public/angular-peru-logo.svg
+0	2	src/app/app.component.html
+8	3	src/app/app.component.ts
+5	2	src/app/app.config.ts
+29	1	src/app/domains/cart/domain/cart.service.ts
+0	0	src/app/{app.component.css => domains/cart/feature/cart-view/cart-view.component.css}
+5	0	src/app/domains/cart/feature/cart-view/cart-view.component.html
+23	0	src/app/domains/cart/feature/cart-view/cart-view.component.ts
+83	0	src/app/domains/catalog/domain/catalog.service.ts
+9	2	src/app/domains/catalog/domain/product.ts
+17	0	src/app/domains/catalog/feature/product-list/product-list.component.css
+43	1	src/app/domains/catalog/feature/product-list/product-list.component.html
+31	1	src/app/domains/catalog/feature/product-list/product-list.component.ts
+38	0	src/app/domains/shared/util/event-bus.service.ts
+4	0	src/app/shell/navbar/navbar.component.css
+17	0	src/app/shell/navbar/navbar.component.html
+11	1	src/app/shell/navbar/navbar.component.ts
+27	0	src/styles.css
+
 "DiegoRodas20 <diegorodas2008@hotmail.com>,Sun Oct 27 02:21:52 2024 -0500	b969bd08c58f751caca606fa82dfda790a2b8f58,Implementation of components for domains"
 19	2	.detective/config.json
 1	1	.detective/hash

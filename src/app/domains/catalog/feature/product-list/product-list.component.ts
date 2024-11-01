@@ -4,8 +4,8 @@ import { ButtonModule } from 'primeng/button';
 import { RatingModule } from 'primeng/rating';
 import { TagModule } from 'primeng/tag';
 import { TooltipModule } from 'primeng/tooltip';
-import { CatalogService } from '../../domain/catalog.service';
-import { Product } from '../../domain/product';
+import { CatalogService } from '../../data/catalog.service';
+import { Product } from '../../data/product';
 
 @Component({
     selector: 'app-product-list',

@@ -77,7 +77,7 @@ export class CatalogService {
 
         this._eventBus.emitEvent({
             type: 'ProductSelected',
-            payload: { product }
+            payload: product.id
         })
     }
 }

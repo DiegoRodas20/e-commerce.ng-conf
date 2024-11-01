@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { CartService } from "../../domain/cart.service";
+import { CartService } from "../../data/cart.service";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -11,7 +11,7 @@ import { CommonModule } from "@angular/common";
 })
 export class CartViewComponent implements OnInit {
 
-    cartItems: { productId: string; quantity: number }[] = [];
+    cartItems: { productId: number; quantity: number }[] = [];
 
     constructor(
         private _cartService: CartService
