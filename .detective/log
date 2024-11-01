@@ -1,3 +1,31 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sun Oct 27 02:21:52 2024 -0500	b969bd08c58f751caca606fa82dfda790a2b8f58,Implementation of components for domains"
+19	2	.detective/config.json
+1	1	.detective/hash
+25	0	.detective/log
+14	1	src/app/app.routes.ts
+12	0	src/app/domains/catalog/catalog.routes.ts
+0	0	src/app/domains/catalog/feature/product-detail/product-detail.component.css
+1	0	src/app/domains/catalog/feature/product-detail/product-detail.component.html
+14	0	src/app/domains/catalog/feature/product-detail/product-detail.component.ts
+0	0	src/app/domains/catalog/feature/product-list/product-list.component.css
+1	0	src/app/domains/catalog/feature/product-list/product-list.component.html
+14	0	src/app/domains/catalog/feature/product-list/product-list.component.ts
+0	0	src/app/domains/order/feature/order-detail/order-detail.component.css
+0	0	src/app/domains/order/feature/order-detail/order-detail.component.html
+14	0	src/app/domains/order/feature/order-detail/order-detail.component.ts
+0	0	src/app/domains/order/feature/order-history/order-history.component.css
+0	0	src/app/domains/order/feature/order-history/order-history.component.html
+14	0	src/app/domains/order/feature/order-history/order-history.component.ts
+12	0	src/app/domains/order/order.routes.ts
+0	0	src/app/domains/payment/feature/payment-form/payment-form.component.css
+0	0	src/app/domains/payment/feature/payment-form/payment-form.component.html
+14	0	src/app/domains/payment/feature/payment-form/payment-form.component.ts
+0	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.css
+0	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.html
+14	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.ts
+12	0	src/app/domains/payment/payment.routes.ts
+0	0	src/app/domains/shared/util/event-bus.service.ts
+
 "DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 17:12:27 2024 -0500	a3561a3a7f84bcbc59b2d6b5674b497ee1dff29a,Implementation of services"
 0	0	src/app/domains/cart/domain/{test.ts => cart.service.ts}
 0	0	src/app/domains/cart/{feature/test.ts => domain/cart.ts}

@@ -1,20 +1,17 @@
 {
   "scopes": [
+    "src/app/domains/shared",
+    "src/app/domains/cart/domain",
+    "src/app/domains/cart/feature/cart-view",
+    "src/app/domains/catalog/domain",
     "src/app/domains/catalog/feature/product-detail",
-    "src/app/domains/catalog/feature/product-list",
-    "src/app/domains/order/feature/order-detail",
-    "src/app/domains/order/feature/order-history",
-    "src/app/domains/payment/feature/payment-form",
-    "src/app/domains/payment/feature/payment-summary",
-    "src/app/shell"
+    "src/app/domains/catalog/feature/product-list"
   ],
   "groups": [
+    "src/app/domains/cart/feature",
+    "src/app/domains/cart",
     "src/app/domains/catalog/feature",
     "src/app/domains/catalog",
-    "src/app/domains/order/feature",
-    "src/app/domains/order",
-    "src/app/domains/payment/feature",
-    "src/app/domains/payment",
     "src/app/domains",
     "src/app"
   ],

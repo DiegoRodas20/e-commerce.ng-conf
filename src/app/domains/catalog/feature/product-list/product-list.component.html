@@ -1,1 +1,43 @@
-<div>PRODUCT LIST</div>
+<div class="catalog">
+    <!-- <h3>Catálogo</h3> -->
+
+    <div class="grid grid-nogutter">
+        @for (product of products; track $index) {
+        <div class="col-12 md:col-3">
+            <div class="product-card px-5 py-4 m-3 text-center">
+                <div class="flex">
+                    <p-tag
+                        severity="success"
+                        [value]="product.stock > 0 ? 'En Stock' : 'Agotado'"
+                    />
+                </div>
+                <img
+                    class="max-w-15rem h-full"
+                    [src]="product.images[0]"
+                    alt="Product Image"
+                />
+                <h3>{{ product.name }}</h3>
+                <p class="mb-2">{{ product.description }}</p>
+                <p-rating
+                    [(ngModel)]="product.rating"
+                    [readonly]="true"
+                    [cancel]="false"
+                />
+                <div
+                    class="flex align-items-center justify-content-between mt-2"
+                >
+                    <span class="text-xl font-semibold">
+                        ${{ product.price }}
+                    </span>
+                    <p-button
+                        pTooltip="Agregar al carrito"
+                        tooltipPosition="top"
+                        icon="pi pi-shopping-cart"
+                        (onClick)="addProductToShoppingCart(product)"
+                    />
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
