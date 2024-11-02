@@ -6,7 +6,7 @@
         <div class="grid mb-4">
             <div class="col-8">
                 <div class="mb-2">{{ item.name }}</div>
-                <div>${{ item.price }}</div>
+                <div class="text-base font-semibold">${{ item.price }}</div>
             </div>
             <div class="col-4">
                 <div class="cart__quantity">
@@ -16,6 +16,7 @@
                         severity="secondary"
                         styleClass="button-quantity"
                         size="small"
+                        (onClick)="decreaseQuantity(item)"
                     />
                     <input type="text" [value]="item.quantity" />
                     <p-button
@@ -24,10 +25,23 @@
                         severity="secondary"
                         styleClass="button-quantity"
                         size="small"
+                        (onClick)="increaseQuantity(item)"
                     />
                 </div>
             </div>
         </div>
         }
+    </div>
+    <div class="cart-view__footer">
+        <div class="cart-view__total mb-4">
+            <h4>Subtotal:</h4>
+            <span>${{ calculateTotal() }}</span>
+        </div>
+        <p-button
+            label="Realizar Orden de Compra"
+            severity="contrast"
+            styleClass="w-full"
+            (onClick)="cartConfirmed()"
+        />
     </div>
 </div>

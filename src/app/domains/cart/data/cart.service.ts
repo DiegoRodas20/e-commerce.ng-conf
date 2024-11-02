@@ -39,4 +39,12 @@ export class CartService {
             });
         }
     }
+
+    public cartConfirmed() {
+
+        this._eventBus.emitEvent({
+            type: "CartConfirmed",
+            payload: null
+        })
+    }
 }

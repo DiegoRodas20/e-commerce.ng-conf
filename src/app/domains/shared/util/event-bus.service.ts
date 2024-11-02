@@ -1,4 +1,5 @@
 import { effect, Injectable, signal } from "@angular/core";
+import { MessageService } from "primeng/api";
 import { DomainEvent, DomainEventType } from "./domain-event";
 
 @Injectable({
@@ -9,7 +10,9 @@ export class EventBusService {
     private eventSignal = signal<DomainEvent | null>(null);
     private listeners = new Map<DomainEventType, ((payload: unknown) => void)[]>();
 
-    constructor() {
+    constructor(
+        private _messageService: MessageService
+    ) {
         effect(() => {
             const event = this.eventSignal();
             if (event) {
@@ -20,6 +23,8 @@ export class EventBusService {
     }
 
     emitEvent(event: DomainEvent) {
+
+        this._messageService.add({ severity: 'contrast', summary: 'Event Domain', detail: event.type });
 
         this.eventSignal.set(event);
     }

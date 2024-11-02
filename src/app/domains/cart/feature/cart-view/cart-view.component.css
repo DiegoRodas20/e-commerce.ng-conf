@@ -9,9 +9,11 @@
         justify-content: space-between;
     }
 
-    .cart-view__description {}
-
-    .cart-view__quantity {}
+    .cart-view__total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .cart__quantity {
         display: flex;

@@ -23,7 +23,7 @@ export class CartViewComponent implements OnInit {
     cartItems: Cart[] = [];
 
     constructor(
-        private _cartService: CartService
+        private _cartService: CartService,
     ) { }
 
     ngOnInit() {
@@ -32,18 +32,12 @@ export class CartViewComponent implements OnInit {
 
     increaseQuantity(item: Cart) {
         item.quantity++;
-        this.updateCart();
     }
 
     decreaseQuantity(item: Cart) {
         if (item.quantity > 1) {
             item.quantity--;
-            this.updateCart();
         }
-    }
-
-    updateCart() {
-        // Aquí podrías sincronizar con el servicio si es necesario
     }
 
     calculateTotal(): number {
@@ -52,5 +46,10 @@ export class CartViewComponent implements OnInit {
 
     trackById(index: number, item: Cart): number {
         return item.productId;
+    }
+
+    cartConfirmed() {
+        
+        this._cartService.cartConfirmed()
     }
 }
