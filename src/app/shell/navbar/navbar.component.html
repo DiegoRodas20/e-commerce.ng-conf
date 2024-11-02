@@ -1,17 +1,17 @@
 <div class="navbar flex justify-content-between flex-wrap">
-  <img class="w-8rem" src="angular-peru-logo.svg" alt="Angular peru logo" />
+    <img class="w-8rem" src="angular-peru-logo.svg" alt="Angular peru logo" />
 
-  <div class="flex align-items-center justify-content-center">
-    <p-button
-      icon="pi pi-shopping-cart"
-      [rounded]="true"
-      [raised]="true"
-      styleClass="button-cart"
-      (onClick)="openCart = true"
-    />
-  </div>
+    <div class="flex align-items-center justify-content-center">
+        <p-button
+            icon="pi pi-shopping-cart"
+            [rounded]="true"
+            [raised]="true"
+            styleClass="button-cart"
+            (onClick)="openCart = true"
+        />
+    </div>
 </div>
 
-<p-sidebar [(visible)]="openCart" position="right">
-  <app-cart-view></app-cart-view>
+<p-sidebar [(visible)]="openCart" position="right" styleClass="w-30rem">
+    <app-cart-view></app-cart-view>
 </p-sidebar>

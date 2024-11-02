@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { EventBusService } from "../../shared/util/event-bus.service";
+import { ProductAddedToCart } from "../../shared/util/product-added-to-cart";
 import { Product } from "./product";
 
 @Injectable({
@@ -75,9 +76,15 @@ export class CatalogService {
 
     addProductToShoppingCart(product: Product) {
 
+        const eventPayload: ProductAddedToCart = {
+            productId: product.id,
+            name: product.name,
+            price: product.price
+        }
+
         this._eventBus.emitEvent({
-            type: 'ProductSelected',
-            payload: product.id
+            type: 'ProductAddedToCart',
+            payload: eventPayload
         })
     }
 }

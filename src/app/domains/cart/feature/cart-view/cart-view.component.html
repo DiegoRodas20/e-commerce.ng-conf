@@ -1,5 +1,33 @@
-<h3>Right Sidebar</h3>
+<div class="cart-view">
+    <h3 class="text-center">Carrito de Compras</h3>
 
-<div>
-    {{ cartItems | json }}
+    <div class="cart-view__body">
+        @for (item of cartItems; track $index) {
+        <div class="grid mb-4">
+            <div class="col-8">
+                <div class="mb-2">{{ item.name }}</div>
+                <div>${{ item.price }}</div>
+            </div>
+            <div class="col-4">
+                <div class="cart__quantity">
+                    <p-button
+                        icon="pi pi-minus"
+                        [rounded]="true"
+                        severity="secondary"
+                        styleClass="button-quantity"
+                        size="small"
+                    />
+                    <input type="text" [value]="item.quantity" />
+                    <p-button
+                        icon="pi pi-plus"
+                        [rounded]="true"
+                        severity="secondary"
+                        styleClass="button-quantity"
+                        size="small"
+                    />
+                </div>
+            </div>
+        </div>
+        }
+    </div>
 </div>

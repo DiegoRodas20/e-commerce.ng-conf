@@ -1,5 +1,7 @@
 import { Injectable } from "@angular/core";
 import { EventBusService } from "../../shared/util/event-bus.service";
+import { ProductAddedToCart } from "../../shared/util/product-added-to-cart";
+import { Cart } from "./cart";
 // import { Product } from "../../catalog/data/product";
 
 @Injectable({
@@ -7,24 +9,34 @@ import { EventBusService } from "../../shared/util/event-bus.service";
 })
 export class CartService {
 
-    private cartItems: { productId: number; quantity: number }[] = [];
+    private cartItems: Cart[] = [];
 
     constructor(
-        private eventBus: EventBusService
+        private _eventBus: EventBusService
     ) {
-        this.eventBus.onEvent('ProductSelected', (payload: unknown) => {
-            this.addProductToCart(payload);
+        this.listenProductAddedToCart()
+    }
+
+    private listenProductAddedToCart() {
+
+        this._eventBus.onEvent('ProductAddedToCart', (payload: unknown) => {
+            this.addProductToCart(payload as ProductAddedToCart);
         });
     }
 
-    private addProductToCart(product: unknown) {
+    private addProductToCart(product: ProductAddedToCart) {
 
-        const existingItem = this.cartItems.find(item => item.productId === product);
+        const existingItem = this.cartItems.find(item => item.productId === product.productId);
 
         if (existingItem) {
             existingItem.quantity = (existingItem.quantity || 0) + 1;
         } else {
-            // this.cartItems.push({ ...product, quantity: 1 });
+            this.cartItems.push({
+                productId: product.productId,
+                name: product.name,
+                price: product.price,
+                quantity: 1
+            });
         }
     }
 }

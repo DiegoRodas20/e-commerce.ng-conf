@@ -1,14 +1,15 @@
 {
   "scopes": [
-    "src/app/domains/cart/domain",
-    "src/app/domains/catalog/domain",
-    "src/app/domains/catalog/feature",
-    "src/app/domains/cart/feature",
-    "src/app/shell",
-    "src/app/domains/shared/util"
+    "src/app/domains/catalog/feature/product-list",
+    "src/app/domains/cart/feature/cart-view",
+    "src/app/domains/shared/util",
+    "src/app/domains/cart/data",
+    "src/app/domains/catalog/data"
   ],
   "groups": [
+    "src/app/domains/cart/feature",
     "src/app/domains/cart",
+    "src/app/domains/catalog/feature",
     "src/app/domains/catalog",
     "src/app/domains/shared",
     "src/app/domains",

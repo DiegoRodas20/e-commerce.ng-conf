@@ -10,6 +10,11 @@
     background: white !important;
 }
 
+.button-quantity {
+    width: 2rem;
+    height: 2rem;
+}
+
 .p-button {
     color: #ffffff;
     background: black;

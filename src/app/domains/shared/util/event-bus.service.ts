@@ -1,11 +1,5 @@
 import { effect, Injectable, signal } from "@angular/core";
-
-export type DomainEventType = 'ProductSelected' | 'ProductAddedToCart' | 'CartConfirmed' | 'PaymentInitiated' | 'PaymentCompleted' | 'OrderCreated';
-
-export interface DomainEvent {
-    type: DomainEventType;
-    payload: unknown;
-}
+import { DomainEvent, DomainEventType } from "./domain-event";
 
 @Injectable({
     providedIn: 'root'
@@ -26,6 +20,7 @@ export class EventBusService {
     }
 
     emitEvent(event: DomainEvent) {
+
         this.eventSignal.set(event);
     }
 
