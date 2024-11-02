@@ -24,7 +24,7 @@ export class EventBusService {
 
     emitEvent(event: DomainEvent) {
 
-        this._messageService.add({ severity: 'contrast', summary: 'Event Domain', detail: event.type });
+        this._messageService.add({ severity: 'contrast', summary: 'Evento de Dominio', detail: event.type });
 
         this.eventSignal.set(event);
     }
