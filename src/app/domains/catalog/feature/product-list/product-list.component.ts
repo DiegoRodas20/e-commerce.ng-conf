@@ -6,6 +6,7 @@ import { TagModule } from 'primeng/tag';
 import { TooltipModule } from 'primeng/tooltip';
 import { CatalogService } from '../../data/catalog.service';
 import { Product } from '../../data/product';
+// import { CartService } from '../../../cart/data/cart.service';
 
 @Component({
     selector: 'app-product-list',

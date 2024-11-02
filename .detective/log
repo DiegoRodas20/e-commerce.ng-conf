@@ -1,0 +1,167 @@
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Nov 2 03:19:00 2024 -0500	b0bf452d61d2e937382a8ac48bcd879c9549105d,Event bus service"
+1	1	src/app/domains/shared/util/event-bus.service.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Nov 2 02:18:47 2024 -0500	c551ab7d36b8f1d7e67e018c9c97d9cd806a8b16,Implementation of cart event domain"
+9	2	src/app/app.component.ts
+5	2	src/app/app.config.ts
+8	0	src/app/domains/cart/data/cart.service.ts
+5	3	src/app/domains/cart/feature/cart-view/cart-view.component.css
+15	1	src/app/domains/cart/feature/cart-view/cart-view.component.html
+6	7	src/app/domains/cart/feature/cart-view/cart-view.component.ts
+6	1	src/app/domains/shared/util/event-bus.service.ts
+1	1	src/styles.css
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Nov 2 01:31:24 2024 -0500	c3891e17f7fd08adb7fc1483166c5785d66f4840,Implementations of cart view"
+7	6	.detective/config.json
+0	1	.detective/hash
+0	120	.detective/log
+19	7	src/app/domains/cart/data/cart.service.ts
+4	1	src/app/domains/cart/data/cart.ts
+53	0	src/app/domains/cart/feature/cart-view/cart-view.component.css
+31	3	src/app/domains/cart/feature/cart-view/cart-view.component.html
+36	3	src/app/domains/cart/feature/cart-view/cart-view.component.ts
+9	2	src/app/domains/catalog/data/catalog.service.ts
+6	0	src/app/domains/shared/util/domain-event.ts
+2	7	src/app/domains/shared/util/event-bus.service.ts
+5	0	src/app/domains/shared/util/product-added-to-cart.ts
+12	12	src/app/shell/navbar/navbar.component.html
+5	0	src/styles.css
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Fri Nov 1 18:57:41 2024 -0500	04d545781eea1aa4a58fe61bb06905568d36f424,Implementation of sheriff config"
+5	6	.detective/config.json
+1	1	.detective/hash
+27	0	.detective/log
+8	22	sheriff.config.ts
+5	5	src/app/domains/cart/{domain => data}/cart.service.ts
+3	0	src/app/domains/cart/data/cart.ts
+0	0	src/app/domains/cart/domain/cart.ts
+2	2	src/app/domains/cart/feature/cart-view/cart-view.component.ts
+1	1	src/app/domains/catalog/{domain => data}/catalog.service.ts
+0	0	src/app/domains/catalog/{domain => data}/product.ts
+2	2	src/app/domains/catalog/feature/product-list/product-list.component.ts
+0	0	src/app/domains/order/{domain => data}/order.service.ts
+0	0	src/app/domains/order/{domain => data}/order.ts
+0	0	src/app/domains/payment/{domain => data}/payment.service.ts
+0	0	src/app/domains/payment/{domain => data}/payment.ts
+3	3	src/app/domains/shared/util/event-bus.service.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Fri Nov 1 04:27:45 2024 -0500	34782fa0749869164b7074911bf88e9cf11c7582,Implementation of catalog list and event bus with signals"
+7	10	.detective/config.json
+1	1	.detective/hash
+28	0	.detective/log
+1	1	.editorconfig
+4	1	angular.json
+28	0	package-lock.json
+3	0	package.json
+67	0	public/angular-peru-logo.svg
+0	2	src/app/app.component.html
+8	3	src/app/app.component.ts
+5	2	src/app/app.config.ts
+29	1	src/app/domains/cart/domain/cart.service.ts
+0	0	src/app/{app.component.css => domains/cart/feature/cart-view/cart-view.component.css}
+5	0	src/app/domains/cart/feature/cart-view/cart-view.component.html
+23	0	src/app/domains/cart/feature/cart-view/cart-view.component.ts
+83	0	src/app/domains/catalog/domain/catalog.service.ts
+9	2	src/app/domains/catalog/domain/product.ts
+17	0	src/app/domains/catalog/feature/product-list/product-list.component.css
+43	1	src/app/domains/catalog/feature/product-list/product-list.component.html
+31	1	src/app/domains/catalog/feature/product-list/product-list.component.ts
+38	0	src/app/domains/shared/util/event-bus.service.ts
+4	0	src/app/shell/navbar/navbar.component.css
+17	0	src/app/shell/navbar/navbar.component.html
+11	1	src/app/shell/navbar/navbar.component.ts
+27	0	src/styles.css
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sun Oct 27 02:21:52 2024 -0500	b969bd08c58f751caca606fa82dfda790a2b8f58,Implementation of components for domains"
+19	2	.detective/config.json
+1	1	.detective/hash
+25	0	.detective/log
+14	1	src/app/app.routes.ts
+12	0	src/app/domains/catalog/catalog.routes.ts
+0	0	src/app/domains/catalog/feature/product-detail/product-detail.component.css
+1	0	src/app/domains/catalog/feature/product-detail/product-detail.component.html
+14	0	src/app/domains/catalog/feature/product-detail/product-detail.component.ts
+0	0	src/app/domains/catalog/feature/product-list/product-list.component.css
+1	0	src/app/domains/catalog/feature/product-list/product-list.component.html
+14	0	src/app/domains/catalog/feature/product-list/product-list.component.ts
+0	0	src/app/domains/order/feature/order-detail/order-detail.component.css
+0	0	src/app/domains/order/feature/order-detail/order-detail.component.html
+14	0	src/app/domains/order/feature/order-detail/order-detail.component.ts
+0	0	src/app/domains/order/feature/order-history/order-history.component.css
+0	0	src/app/domains/order/feature/order-history/order-history.component.html
+14	0	src/app/domains/order/feature/order-history/order-history.component.ts
+12	0	src/app/domains/order/order.routes.ts
+0	0	src/app/domains/payment/feature/payment-form/payment-form.component.css
+0	0	src/app/domains/payment/feature/payment-form/payment-form.component.html
+14	0	src/app/domains/payment/feature/payment-form/payment-form.component.ts
+0	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.css
+0	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.html
+14	0	src/app/domains/payment/feature/payment-summary/payment-summary.component.ts
+12	0	src/app/domains/payment/payment.routes.ts
+0	0	src/app/domains/shared/util/event-bus.service.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 17:12:27 2024 -0500	a3561a3a7f84bcbc59b2d6b5674b497ee1dff29a,Implementation of services"
+0	0	src/app/domains/cart/domain/{test.ts => cart.service.ts}
+0	0	src/app/domains/cart/{feature/test.ts => domain/cart.ts}
+0	0	src/app/domains/catalog/domain/catalog.service.ts
+0	0	src/app/domains/catalog/domain/{test.ts => product.ts}
+0	0	src/app/domains/order/domain/order.service.ts
+0	0	src/app/domains/order/domain/order.ts
+0	0	src/app/domains/payment/domain/payment.service.ts
+0	0	src/app/domains/payment/domain/payment.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 15:22:33 2024 -0500	69bbb23662e2c285377c4fe61fd40a6fde9cc78e,Adding routes of bounded contexts"
+1	1	.detective/hash
+17	0	.detective/log
+1	335	src/app/app.component.html
+7	6	src/app/app.component.ts
+0	0	src/app/domains/catalog/catalog.routes.ts
+0	0	src/app/domains/order/order.routes.ts
+0	0	src/app/domains/payment/payment.routes.ts
+0	0	src/app/shell/home/home.component.css
+0	0	src/app/shell/home/home.component.html
+14	0	src/app/shell/home/home.component.ts
+0	0	src/app/shell/navbar/navbar.component.css
+0	0	src/app/shell/navbar/navbar.component.html
+14	0	src/app/shell/navbar/navbar.component.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 04:42:58 2024 -0500	7a0c1e8fd712891c53797b797dd8820fb6378988,first commit"
+20	0	.detective/config.json
+1	0	.detective/hash
+23	0	.detective/log
+14	0	angular.json
+45	0	eslint.config.js
+1870	337	package-lock.json
+9	2	package.json
+31	0	sheriff.config.ts
+0	29	src/app/app.component.spec.ts
+1	1	src/app/app.config.ts
+2	0	src/app/domains/cart/domain/test.ts
+0	0	src/app/domains/cart/feature/test.ts
+2	0	src/app/domains/catalog/domain/test.ts
+11	11	src/index.html
+1	1	src/main.ts
+
+"DiegoRodas20 <diegorodas2008@hotmail.com>,Sat Oct 26 00:57:03 2024 -0500	fb93a143b9ee8c89d1af9b14fabf46d0f4096cd5,initial commit"
+17	0	.editorconfig
+42	0	.gitignore
+4	0	.vscode/extensions.json
+20	0	.vscode/launch.json
+42	0	.vscode/tasks.json
+27	0	README.md
+96	0	angular.json
+13259	0	package-lock.json
+38	0	package.json
+-	-	public/favicon.ico
+0	0	src/app/app.component.css
+336	0	src/app/app.component.html
+29	0	src/app/app.component.spec.ts
+13	0	src/app/app.component.ts
+8	0	src/app/app.config.ts
+3	0	src/app/app.routes.ts
+13	0	src/index.html
+6	0	src/main.ts
+1	0	src/styles.css
+15	0	tsconfig.app.json
+33	0	tsconfig.json
+15	0	tsconfig.spec.json
